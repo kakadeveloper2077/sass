@@ -1,1 +1,1 @@
-# sass
+🔰 Sass (Syntactically Awesome Stylesheets) is a CSS preprocessor that helps make writing styles more powerful and efficient. It adds features that don’t exist in plain CSS, like variables, nesting, mixins, inheritance, and functions. With Sass, you can keep your code cleaner, more organized, and easier to maintain — especially in larger projects. In the end, Sass compiles down to regular CSS that browsers understand.
