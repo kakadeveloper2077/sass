@@ -1,0 +1,35 @@
+// message-shared [é extendido, pelo @extend, repassando valores das prppriedades pro resto das classes.]
+%message-shared {
+    border: 1px solid cyan;
+    padding: 10px;
+    color: white;
+}
+
+// equal-heights nunca é extendido pq o @extend, não usa ele.
+%equal-heights {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.page {
+    @extend %equal-heights;
+}
+
+.message {
+    @extend %message-shared;
+}
+
+.success {
+    @extend %message-shared;
+    border-color: green;
+}
+
+.error {
+    @extend %message-shared;
+    border-color: red;
+}
+
+.warning {
+    @extend %message-shared;
+    border-color: yellow;
+}

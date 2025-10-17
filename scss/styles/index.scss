@@ -1,0 +1,50 @@
+// variável;
+$color-set-1: black;
+$color-set-2: green;
+
+
+// nesting, coisa dentro de coisa;
+.info {
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    background: $color-set-1;
+    color: white;
+    margin: 12px;
+    text-align: center;
+    padding: 50px;
+    h1,
+    p {
+        color: $color-set-2;
+    }
+
+    h1 {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    button {
+       padding: 20px;
+       &:hover{
+        background-color: green;
+       }
+    }
+}
+
+// mixing -> forma de misturar difentes valores, incluindo eles por meio de um @include inicial e puxando seu primeiro mixin, dps a inclusão
+// depois o acesso da variável, e o novo tema definido.
+@mixin tema ($tema-definido: blue){
+    background:$tema-definido;
+    box-shadow: 0 0 1px rgba($tema-definido, .25);
+    color: white;
+}
+
+.info {
+    @include tema;
+}
+
+.message {
+    @include tema($tema-definido, darkgreen);
+}
+
+.success {
+    @include tema($tema-definido, lightgreen);
+}

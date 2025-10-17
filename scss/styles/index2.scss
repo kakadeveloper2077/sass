@@ -1,0 +1,9 @@
+// importação do arquivo pelo @use e o nome do arquivo como referência;
+// inverse é a classe que vai puxar a cor de fundo acessando esse arquivo e a variável dele pelo '.';
+// color é color;
+@use 'base';
+
+.inverse{
+    background-color: base.$primary-color;
+    color: base.$text-color;
+}

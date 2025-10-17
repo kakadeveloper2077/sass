@@ -1,0 +1,11 @@
+// arquivo externo que carrega propriedades e valores: tipo de fonte e qual cor usar.
+// isto faz vinculo com o index2.scss.
+
+$font-stack:Helvetica, Sans-serif;
+$primary-color:purple;
+$text-color: white;
+
+body {
+    font: 120% $font-stack;
+    color: $text-color;
+}
