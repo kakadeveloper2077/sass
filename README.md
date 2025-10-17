@@ -1,3 +1,5 @@
 🔰 Sass (Syntactically Awesome Stylesheets) is a CSS preprocessor that helps make writing styles more powerful and efficient. It adds features that don’t exist in plain CSS, like variables, nesting, mixins, inheritance, and functions. With Sass, you can keep your code cleaner, more organized, and easier to maintain — especially in larger projects. In the end, Sass compiles down to regular CSS that browsers understand. <br><br>
 
 ❗ So for this case, i´ve created an simple login screen with it, basically, there´s 2 stylish files, one is the css, which normally, ill be rendered and understanded by the browser, and with the sass, which the browser it not understand all the new properties which has inside of it will be preprocessed into the css file, to finally be rendered as a "normal stylish css file".
+
+❗ Each index.css.map shows as json model: the version, the sources, names, mappings (idk what is that -_-), and the css file which ill be compiled and rendered by the browser.
